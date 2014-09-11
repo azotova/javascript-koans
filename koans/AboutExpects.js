@@ -1,16 +1,16 @@
 describe("About Expects", function() {
 
-  //We shall contemplate truth by testing reality, via spec expectations.  
+  //We shall contemplate truth by testing reality, via spec expectations.  Trying how edits are reflected in git
   it("should expect true", function() {
-    expect(false).toBeTruthy(); //This should be true
-  });
+    expect(true).toBeTruthy(); //This should be true
+  })
 
   //To understand reality, we must compare our expectations against reality.
   it("should expect equality", function () { 
 	  var expectedValue = FILL_ME_IN;
 	  var actualValue = 1 + 1;
 	
-	  expect(actualValue === expectedValue).toBeTruthy();
+	  expect(actualValue === expectedValue).toBeFalsy();
   });  
 
   //Some ways of asserting equality are better than others.
