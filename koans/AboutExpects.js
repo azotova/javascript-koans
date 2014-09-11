@@ -19,7 +19,7 @@ describe("About Expects", function() {
 	  var actualValue = 1 + 1;
 	
   // toEqual() compares using common sense equality.
-	  expect(actualValue).toEqual(expectedValue);
+	  expect(actualValue).toEqual(2);
   });
 
   //Sometimes you need to be really exact about what you "type".
@@ -28,11 +28,11 @@ describe("About Expects", function() {
 	  var actualValue = (1 + 1).toString();
 	
   // toBe() will always use === to compare.
-	  expect(actualValue).toBe(expectedValue);
+	  expect(actualValue).toBe("2");
   });  
 
   //Sometimes we will ask you to fill in the values.
   it("should have filled in values", function () {
-	  expect(1 + 1).toEqual(FILL_ME_IN);
+	  expect(1 + 1).toEqual(2);
   });
 });
